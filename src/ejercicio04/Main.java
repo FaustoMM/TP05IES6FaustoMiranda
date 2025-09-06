@@ -1,10 +1,18 @@
 package ejercicio04;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        int nroA = 9;
-        construirTablaDelNroIndicado(nroA);
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Ingrese un numero entero entre el 1 y 9 para ver su tabla: ");
+        int nro = sc.nextInt();
+
+        construirTablaDelNroIndicado(nro);
+
+        sc.close();
     }
  
     public static void construirTablaDelNroIndicado(int e) {
