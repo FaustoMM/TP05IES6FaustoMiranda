@@ -8,6 +8,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Ingrese un numero entre 0 y 10: ");
+
+        if (sc.hasNextInt()) {
         int num = sc.nextInt();
 
         if (num < 0 || num > 10) {
@@ -21,8 +23,12 @@ public class Main {
                 i--;
             }
 
-            System.out.println("El factorial de " + num + " es: " + factorial);
-        }
+            System.out.println("El factorial de " + num + " es = " + factorial);
+        } 
+        } else {
+            System.out.println("ERROR. Ingresa un numero entero entre 0 y 10");
+        } 
+        
         sc.close();
     }
 

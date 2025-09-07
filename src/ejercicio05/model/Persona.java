@@ -73,9 +73,15 @@ public class Persona {
     }
 
     // Metodo para verificar si es mayor de edad
-    public boolean mayorDeEdad() {
-        return calcularEdad() >= 18;
-    }
+     public boolean mayorDeEdad() {
+        if (calcularEdad() >= 18) {
+            System.out.println("La persona es mayor de edad.");
+            return true;
+        } else {
+            System.out.println("La persona NO es mayor de edad.");
+            return false;
+        }
+     }
 
     // Metodo para mostrar los datos
     public void mostrarDatos() {
@@ -85,13 +91,8 @@ public class Persona {
         System.out.println("Provincia: " + provincia);
         System.out.println("Edad: " + calcularEdad());
 
-        if (mayorDeEdad()) {
-            System.out.println("La persona es mayor de edad.");
-        } else {
-            System.out.println("La persona NO es mayor de edad.");
-        }
+        mayorDeEdad();
     }
-
 
 }
         

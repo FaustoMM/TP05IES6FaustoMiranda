@@ -29,6 +29,11 @@ public class Main {
 
         System.out.println("Persona 3");
         persona3.mostrarDatos();
-    
+
+        // Prueba
+        Persona persona4 = new Persona("40223342", "Luisa", LocalDate.of(2007, 3, 10));
+
+        System.out.println("Persona 4 ");
+        persona3.mayorDeEdad(); 
     }
 }
